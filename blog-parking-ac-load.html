@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sizing batteries for parking AC | Vethy Blog</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Qingdao Vethy Industrial Co., Ltd.</span>
+        <span class="brand-tag">Clean energy & vehicle comfort</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="nav-main" aria-label="Primary">
+        <ul>
+          <li><a href="solar-panels.html">Solar Panels</a></li>
+          <li><a href="lithium-batteries.html">Lithium Batteries</a></li>
+          <li><a href="parking-air-conditioner.html">Parking Air Conditioner</a></li>
+          <li><a href="blog.html" class="is-active">Blog</a></li>
+          <li><a class="nav-cta" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="section">
+      <div class="section-inner prose" style="max-width: 720px;">
+        <p class="post-meta" style="margin-bottom: 0.5rem;"><a href="blog.html">← Blog</a> · March 2026</p>
+        <h1 style="color: var(--text); margin-top: 0;">Sizing house batteries for overnight parking AC runtime</h1>
+        <p><strong>Parking air conditioners</strong> for trucks and RVs draw significant DC current through an inverter stage or native DC compressor, depending on model. Integrators should combine catalog cooling power with realistic duty cycle.</p>
+        <h2 style="color: var(--text);">Start from electrical input</h2>
+        <p>Request the manufacturer’s input power curve at your expected ambient temperature. Peak current matters for BMS and fuse sizing, not only average overnight consumption.</p>
+        <h2 style="color: var(--text);">Depth of discharge</h2>
+        <p>LiFePO₄ packs are often specified for 80–90% usable window. Leave margin for morning inverter losses and auxiliary loads such as lighting and pumps.</p>
+        <h2 style="color: var(--text);">Solar recharge</h2>
+        <p>If the vehicle carries a PV array, match MPPT voltage windows with the pack nominal voltage. <a href="solar-panels.html">Solar panels</a> from the same supplier ecosystem can simplify documentation for your customer.</p>
+        <p><a class="btn btn-primary" href="contact.html">Ask for AC + battery bundle</a></p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>Company</h4>
+        <p><strong>Qingdao Vethy Industrial Co., Ltd.</strong></p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="solar-panels.html">Solar panels</a></li>
+          <li><a href="lithium-batteries.html">Lithium batteries</a></li>
+          <li><a href="parking-air-conditioner.html">Parking air conditioner</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© <span id="y"></span> Qingdao Vethy Industrial Co., Ltd.</p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    var btn = document.querySelector(".nav-toggle");
+    var nav = document.querySelector(".nav-main");
+    if (btn && nav) {
+      btn.addEventListener("click", function () {
+        var open = nav.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+  </script>
+</body>
+</html>

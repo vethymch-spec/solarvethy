@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Parking air conditioners for trucks and RVs — Qingdao Vethy Industrial Co., Ltd." />
+  <title>Parking Air Conditioner | Qingdao Vethy Industrial Co., Ltd.</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Qingdao Vethy Industrial Co., Ltd.</span>
+        <span class="brand-tag">Clean energy & vehicle comfort</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="nav-main" aria-label="Primary">
+        <ul>
+          <li><a href="solar-panels.html">Solar Panels</a></li>
+          <li><a href="lithium-batteries.html">Lithium Batteries</a></li>
+          <li><a href="parking-air-conditioner.html" class="is-active">Parking Air Conditioner</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a class="nav-cta" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <h1>Parking air conditioner</h1>
+        <p>Also known as <em>truck sleeper AC</em> or <em>RV parking AC</em>, these roof-mounted units cool the cab or living space while the engine is off — essential for driver rest, fuel saving, and compliance with idle restrictions.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="section-inner two-col">
+        <img src="assets/product-parking-ac.png" alt="Parking air conditioner unit" width="900" height="675" style="border-radius: 12px; border: 1px solid var(--border);" />
+        <div class="prose">
+          <h2 style="margin-top: 0; color: var(--text);">Why fleets and RV owners choose parking AC</h2>
+          <p>Traditional idling wastes fuel and increases maintenance. A dedicated parking AC powered from the vehicle battery bank (often lithium) or a small generator interface delivers quieter sleep with predictable energy use.</p>
+          <ul>
+            <li>Low-noise compressors suitable for overnight parking</li>
+            <li>Roof profiles designed for common truck and RV cut-out patterns</li>
+            <li>Coordination with our battery line for Ah/hour load planning</li>
+            <li>Spare parts philosophy discussed per model for your market</li>
+          </ul>
+          <p><a class="btn btn-primary" href="contact.html">Get model list &amp; MOQ</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-alt">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>System pairing</h2>
+          <p>For a complete comfort + energy package, combine parking AC with lithium house batteries and optional solar charging — our export team can suggest compatible voltage platforms.</p>
+        </div>
+        <div class="features">
+          <div class="feature"><strong>Long-haul trucks</strong><span>Sleeper cab cooling without engine idle.</span></div>
+          <div class="feature"><strong>Motorhomes</strong><span>Comfort when shore power is unavailable.</span></div>
+          <div class="feature"><strong>Special vehicles</strong><span>Custom mounting studies for non-standard roofs on request.</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>Company</h4>
+        <p><strong>Qingdao Vethy Industrial Co., Ltd.</strong></p>
+        <p>Export of solar panels, lithium batteries, and parking air conditioning equipment.</p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="solar-panels.html">Solar panels</a></li>
+          <li><a href="lithium-batteries.html">Lithium batteries</a></li>
+          <li><a href="parking-air-conditioner.html">Parking air conditioner</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© <span id="y"></span> Qingdao Vethy Industrial Co., Ltd. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    var btn = document.querySelector(".nav-toggle");
+    var nav = document.querySelector(".nav-main");
+    if (btn && nav) {
+      btn.addEventListener("click", function () {
+        var open = nav.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+  </script>
+</body>
+</html>

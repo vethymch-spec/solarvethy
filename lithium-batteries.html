@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Lithium battery packs and storage solutions for export — Qingdao Vethy Industrial Co., Ltd." />
+  <title>Lithium Batteries | Qingdao Vethy Industrial Co., Ltd.</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Qingdao Vethy Industrial Co., Ltd.</span>
+        <span class="brand-tag">Clean energy & vehicle comfort</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="nav-main" aria-label="Primary">
+        <ul>
+          <li><a href="solar-panels.html">Solar Panels</a></li>
+          <li><a href="lithium-batteries.html" class="is-active">Lithium Batteries</a></li>
+          <li><a href="parking-air-conditioner.html">Parking Air Conditioner</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a class="nav-cta" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <h1>Lithium batteries</h1>
+        <p>LiFePO₄ chemistry dominates safety-sensitive mobile and stationary use cases. We coordinate cell selection, BMS strategy, and enclosure design with your voltage and communication requirements.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="section-inner two-col">
+        <img src="assets/product-lithium-batteries.png" alt="Lithium battery modules" width="900" height="675" style="border-radius: 12px; border: 1px solid var(--border);" />
+        <div class="prose">
+          <h2 style="margin-top: 0; color: var(--text);">Applications</h2>
+          <p>From low-voltage RV and marine house banks to higher-voltage industrial buffer storage, we align pack architecture with inverter/charger limits and charging sources (solar, alternator, shore).</p>
+          <ul>
+            <li>Vehicle and vessel house power with vibration-aware mechanical design</li>
+            <li>Solar + battery hybrid kits alongside our PV offering</li>
+            <li>Peak shaving and backup for small commercial sites</li>
+            <li>Communication: CAN / RS485 options depending on inverter ecosystem</li>
+          </ul>
+          <p><a class="btn btn-primary" href="contact.html">Discuss voltage &amp; BMS</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-alt">
+      <div class="section-inner">
+        <div class="section-head">
+          <h2>Export documentation</h2>
+          <p>Battery shipments require correct MSDS/UN38.3 paths and labeling. Share your destination country and forwarder preferences early so we can confirm packaging and paperwork.</p>
+        </div>
+        <div class="features">
+          <div class="feature"><strong>Safety tests</strong><span>UN38.3-related documentation supplied per SKU as agreed in contract.</span></div>
+          <div class="feature"><strong>Clear labeling</strong><span>Watt-hour marking and handling labels for air/sea compliance.</span></div>
+          <div class="feature"><strong>Integration</strong><span>Pre-wired main fuse, main switch, and display options on request.</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>Company</h4>
+        <p><strong>Qingdao Vethy Industrial Co., Ltd.</strong></p>
+        <p>Export of solar panels, lithium batteries, and parking air conditioning equipment.</p>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul>
+          <li><a href="solar-panels.html">Solar panels</a></li>
+          <li><a href="lithium-batteries.html">Lithium batteries</a></li>
+          <li><a href="parking-air-conditioner.html">Parking air conditioner</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© <span id="y"></span> Qingdao Vethy Industrial Co., Ltd. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    var btn = document.querySelector(".nav-toggle");
+    var nav = document.querySelector(".nav-main");
+    if (btn && nav) {
+      btn.addEventListener("click", function () {
+        var open = nav.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+  </script>
+</body>
+</html>
